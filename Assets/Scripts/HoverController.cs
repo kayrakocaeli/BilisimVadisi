@@ -21,18 +21,17 @@ public class HoverController : MonoBehaviour
     private void FixedUpdate()
     {
         HoverControl();
-
     }
     private void HoverControl()
     {
-        rb.AddForceAtPosition(Time.deltaTime * transform.TransformDirection(Vector3.forward) * Input.GetAxis("Vertical") * 400f, prop.transform.position);
+        rb.AddForceAtPosition(Time.deltaTime * transform.TransformDirection(Vector3.forward) * Input.GetAxis("Vertical") * 1100f, prop.transform.position);
         rb.AddTorque(Time.deltaTime * transform.TransformDirection(Vector3.up) * Input.GetAxis("Horizontal") * 300f);
         foreach (GameObject spring in sprinngs)
         {
             RaycastHit hit;
             if (Physics.Raycast(spring.transform.position, transform.TransformDirection(Vector3.down), out hit, height))
             {
-                rb.AddForceAtPosition(Time.deltaTime * transform.TransformDirection(Vector3.up) * Mathf.Pow(height - hit.distance, 2f) / 3f * 250f, spring.transform.position);
+                rb.AddForceAtPosition(Time.deltaTime * transform.TransformDirection(Vector3.up) * Mathf.Pow(height - hit.distance, 2f) / 3f * 500f, spring.transform.position);
             }
             Debug.Log(hit.distance);
         }
