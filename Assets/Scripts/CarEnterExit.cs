@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CarEnterExit : MonoBehaviour
 {
+    
     public GameObject EnterText;
     public GameObject ExitText;
    
@@ -21,6 +23,7 @@ public class CarEnterExit : MonoBehaviour
 
     public static bool insideCar = false;
     public static bool outsideCar = false;
+    
 
     void Start()
     {
@@ -39,24 +42,24 @@ public class CarEnterExit : MonoBehaviour
             EnterText.SetActive(false);
         
             ExitText.SetActive(true);
-            playerCamera.SetActive(false);
-            playerMain.transform.SetParent(carTransform);
-            playerMain.SetActive(false);
-           
+            //playerCamera.SetActive(false);
+            //playerMain.transform.SetParent(carTransform);
+            //playerMain.SetActive(false);
 
-            this.gameObject.GetComponent<HoverController>().enabled = true;
+
+            //this.gameObject.GetComponent<HoverController>().enabled = true;
             //this.gameObject.GetComponent<CarUserControl>().enabled = true;
             //this.gameObject.GetComponent<CarAudio>().enabled = true;
-            insideCar = true;
-
-            
-            StartCoroutine(PauseForCamera());
+            //insideCar = true;
 
 
+            //StartCoroutine(PauseForCamera());
+            SceneManager.LoadScene("AirCar");
 
-    
 
-            }
+
+
+        }
 
             //Exit Car
             if (Input.GetKeyDown(KeyCode.G) && insideCar == true)
@@ -69,84 +72,79 @@ public class CarEnterExit : MonoBehaviour
 
 
                
-            this.gameObject.GetComponent<HoverController>().enabled = false;
+            //this.gameObject.GetComponent<HoverController>().enabled = false;
             //this.gameObject.GetComponent<CarUserControl>().enabled = false;
             //this.gameObject.GetComponent<CarAudio>().enabled = false;
-            insideCar = false;
+            //insideCar = false;
 
 
                 
-                StartCoroutine(ExitCourotine());
+                //StartCoroutine(ExitCourotine());
             }
 
 
         }
 
 
-
+    /*
         IEnumerator PauseForCamera()
         {
-            yield return new WaitForSeconds(5);
+            //yield return new WaitForSeconds(5);
             
-            CarCamera.SetActive(true);
+            //CarCamera.SetActive(true);
 
             
         }
 
         IEnumerator ExitCourotine()
         {
-            yield return new WaitForSeconds(5);
+            //yield return new WaitForSeconds(5);
             
            
-            playerMain.transform.SetParent(carTransform, false);
-            playerCamera.SetActive(true);
-            playerMain.SetActive(true);
-
-            
-
-
+            //playerMain.transform.SetParent(carTransform, false);
+            //playerCamera.SetActive(true);
+            //playerMain.SetActive(true);
         }
+    */
 
 
 
         //For Buttons
         public void EnterCarFunction()
         {
-      
-        
-            EnterText.SetActive(false);
-           
-            ExitText.SetActive(true);
-            playerCamera.SetActive(false);
-            playerMain.transform.SetParent(carTransform);
-            playerMain.SetActive(false);
+
+            //EnterText.SetActive(false);
+            //ExitText.SetActive(true);
+            //playerCamera.SetActive(false);
+            //playerMain.transform.SetParent(carTransform);
+            //playerMain.SetActive(false);
             
 
-        this.gameObject.GetComponent<HoverController>().enabled = true;
+       // this.gameObject.GetComponent<HoverController>().enabled = true;
         //this.gameObject.GetComponent<CarUserControl>().enabled = true;
         //this.gameObject.GetComponent<CarAudio>().enabled = true;
         //insideCar = true;
 
        
-            StartCoroutine(PauseForCamera());
+            //StartCoroutine(PauseForCamera());
         }
 
         public void ExitCarFunction()
         {
    
        
-            ExitText.SetActive(false);
+           // ExitText.SetActive(false);
 
 
 
            
-        this.gameObject.GetComponent<HoverController>().enabled = true;
+        //this.gameObject.GetComponent<HoverController>().enabled = true;
         //this.gameObject.GetComponent<CarUserControl>().enabled = false;
         //this.gameObject.GetComponent<CarAudio>().enabled = false;
 
         // insideCar = false;
 
 
-        StartCoroutine(ExitCourotine());
+        //StartCoroutine(ExitCourotine());
         }
     } 
