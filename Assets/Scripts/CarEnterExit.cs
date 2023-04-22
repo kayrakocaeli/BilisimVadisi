@@ -54,7 +54,7 @@ public class CarEnterExit : MonoBehaviour
 
 
             //StartCoroutine(PauseForCamera());
-            SceneManager.LoadScene("AirCar");
+            
 
 
 
