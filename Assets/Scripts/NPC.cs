@@ -6,7 +6,7 @@ using TMPro;
 
 [System.Serializable]
 public class NPC : MonoBehaviour {
-
+    
     public Transform ChatBackGround;
     public Transform NPCCharacter;
 
@@ -19,12 +19,15 @@ public class NPC : MonoBehaviour {
 
     void Start () {
         dialogueSystem = FindObjectOfType<DialogueSystem>();
+        
+
     }
 	
 	void Update () {
           Vector3 Pos = Camera.main.WorldToScreenPoint(NPCCharacter.position);
           Pos.y += 175;
           ChatBackGround.position = Pos;
+        
     }
 
     public void OnTriggerStay(Collider other)
