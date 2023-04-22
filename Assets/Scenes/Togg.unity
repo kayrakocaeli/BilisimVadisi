@@ -1957,7 +1957,7 @@ MonoBehaviour:
         invertRotationJoystick: 1
   _vehicleTorque:
     maxVelocityKMh: 80
-    engineTorque: 4
+    engineTorque: 1
     numberOfGears: 6
     speedOfGear: 1.5
     manualAdjustmentOfTorques:
