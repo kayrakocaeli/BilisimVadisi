@@ -33,7 +33,7 @@ public class HoverController : MonoBehaviour
             {
                 rb.AddForceAtPosition(Time.deltaTime * transform.TransformDirection(Vector3.up) * Mathf.Pow(height - hit.distance, 2f) / 3f * 500f, spring.transform.position);
             }
-            Debug.Log(hit.distance);
+            
         }
         rb.AddForce(-Time.deltaTime * transform.TransformVector(Vector3.right) * transform.InverseTransformVector(rb.velocity).x * 5f);
     }

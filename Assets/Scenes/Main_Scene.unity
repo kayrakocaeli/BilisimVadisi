@@ -403,7 +403,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1933207941}
     - target: {fileID: 8913293484433438170, guid: 7f7b3a76cb8bad74aae2cca9025cda7e, type: 3}
+      propertyPath: MiniMapLayer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913293484433438170, guid: 7f7b3a76cb8bad74aae2cca9025cda7e, type: 3}
       propertyPath: ShowAreaGrid
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913293484433438170, guid: 7f7b3a76cb8bad74aae2cca9025cda7e, type: 3}
+      propertyPath: AllowMapMarks
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8913293484433438170, guid: 7f7b3a76cb8bad74aae2cca9025cda7e, type: 3}
@@ -1008,7 +1016,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659695085}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.017, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1048,7 +1056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6187067436480850121, guid: 41835c9268093a9418ed4c732a5c2b5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.24
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6187067436480850121, guid: 41835c9268093a9418ed4c732a5c2b5f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1081,6 +1089,14 @@ PrefabInstance:
     - target: {fileID: 6187067436480850121, guid: 41835c9268093a9418ed4c732a5c2b5f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187067436480850125, guid: 41835c9268093a9418ed4c732a5c2b5f, type: 3}
+      propertyPath: m_Mass
+      value: 99999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187067436480850125, guid: 41835c9268093a9418ed4c732a5c2b5f, type: 3}
+      propertyPath: m_Constraints
+      value: 126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41835c9268093a9418ed4c732a5c2b5f, type: 3}
@@ -1225,7 +1241,7 @@ Transform:
   m_GameObject: {fileID: 809463093}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.323, y: -0.162, z: 0.58}
-  m_LocalScale: {x: 1, y: 0.3081406, z: 1}
+  m_LocalScale: {x: 1, y: 0.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2005161396}
@@ -1344,7 +1360,7 @@ Transform:
   m_GameObject: {fileID: 846184516}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.323, y: -0.162, z: 0.58}
-  m_LocalScale: {x: 1, y: 0.3081406, z: 1}
+  m_LocalScale: {x: 1, y: 0.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2005161396}
@@ -1587,7 +1603,7 @@ Transform:
   m_GameObject: {fileID: 900614739}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.323, y: -0.162, z: -0.543}
-  m_LocalScale: {x: 1, y: 0.3081406, z: 1}
+  m_LocalScale: {x: 1, y: 0.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2005161396}
@@ -1929,7 +1945,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258865851}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f4a8e0c40fb2cd4c8645029d0603d60, type: 3}
   m_Name: 
@@ -2410,10 +2426,10 @@ MonoBehaviour:
     rightFrontWheel:
       wheelMesh: {fileID: 7846009876664074355}
       wheelCollider: {fileID: 809463095}
-      wheelDrive: 1
+      wheelDrive: 0
       wheelHandBrake: 1
       skidMarkShift: 0.04
-      wheelTurn: 1
+      wheelTurn: 0
       wheelWorldPosition: {x: 0, y: 0, z: 0}
       rendSKDmarks: {fileID: 0}
       generateSkidBool: 0
@@ -2423,10 +2439,10 @@ MonoBehaviour:
     leftFrontWheel:
       wheelMesh: {fileID: 3248940044085115092}
       wheelCollider: {fileID: 846184518}
-      wheelDrive: 1
+      wheelDrive: 0
       wheelHandBrake: 1
       skidMarkShift: 0.04
-      wheelTurn: 1
+      wheelTurn: 0
       wheelWorldPosition: {x: 0, y: 0, z: 0}
       rendSKDmarks: {fileID: 0}
       generateSkidBool: 0
@@ -2436,7 +2452,7 @@ MonoBehaviour:
     rightRearWheel:
       wheelMesh: {fileID: 8339314206769931757}
       wheelCollider: {fileID: 1984223304}
-      wheelDrive: 1
+      wheelDrive: 0
       wheelHandBrake: 1
       skidMarkShift: 0.04
       wheelTurn: 0
@@ -2449,7 +2465,7 @@ MonoBehaviour:
     leftRearWheel:
       wheelMesh: {fileID: 1676884957324975987}
       wheelCollider: {fileID: 900614740}
-      wheelDrive: 1
+      wheelDrive: 0
       wheelHandBrake: 1
       skidMarkShift: 0.04
       wheelTurn: 0
@@ -3291,7 +3307,7 @@ Transform:
   m_GameObject: {fileID: 1984223302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.327, y: -0.162, z: -0.58}
-  m_LocalScale: {x: 1, y: 0.3081406, z: 1}
+  m_LocalScale: {x: 1, y: 0.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2005161396}

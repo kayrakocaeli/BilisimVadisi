@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/AirCar.unity
     guid: 5fa5438c7e91fef44988f07052d8f40d
   - enabled: 1
+    path: Assets/Scenes/Main_Scene_AirCar_Exit.unity
+    guid: 82d12d9d71c49e746a1fe3918d4c9bfa
+  - enabled: 1
     path: Assets/Scenes/Togg.unity
-    guid: 1f744ba99e580c745bcd9ff390ce52d7
+    guid: 9198c73803b32184d95826344cbc5df3
+  - enabled: 1
+    path: Assets/Scenes/Main_Scene_Togg_Exit.unity
+    guid: eb9d6a0b8a6c4e3439035bff3b34aa66
   m_configObjects: {}
