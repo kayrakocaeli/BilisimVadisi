@@ -857,27 +857,6 @@ MonoBehaviour:
   carTransform: {fileID: 148456981}
   EnterPlayerPosition: {fileID: 148456981}
   ExitPlayerPosition: {fileID: 148456981}
---- !u!114 &527022742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527022735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dcc15299c79b5d4182381101dac6761, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnterText: {fileID: 0}
-  ExitText: {fileID: 0}
-  CarCamera: {fileID: 0}
-  playerCamera: {fileID: 0}
-  TriggerObject: {fileID: 0}
-  playerMain: {fileID: 0}
-  carTransform: {fileID: 0}
-  EnterPlayerPosition: {fileID: 0}
-  ExitPlayerPosition: {fileID: 0}
 --- !u!1001 &581180036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1081,7 +1060,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6187067436480850114, guid: 41835c9268093a9418ed4c732a5c2b5f, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6187067436480850115, guid: 41835c9268093a9418ed4c732a5c2b5f, type: 3}
       propertyPath: m_Name
@@ -1101,7 +1080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6187067436480850121, guid: 41835c9268093a9418ed4c732a5c2b5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.02
+      value: 25.3
       objectReference: {fileID: 0}
     - target: {fileID: 6187067436480850121, guid: 41835c9268093a9418ed4c732a5c2b5f, type: 3}
       propertyPath: m_LocalPosition.z
