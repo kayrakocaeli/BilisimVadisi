@@ -133,20 +133,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
   m_PrefabInstance: {fileID: 828053537}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &57123957
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57123954}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.1835995
-  m_Height: 2.4290657
-  m_Direction: 1
-  m_Center: {x: -0.06828117, y: 0.71453285, z: -0.0036849976}
 --- !u!114 &57123958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +151,19 @@ MonoBehaviour:
   sentences:
   - selam ben digiage ceo
   - naber
+--- !u!65 &57123959
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57123954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.2554677, z: 1}
+  m_Center: {x: -0, y: 0.62773263, z: -0}
 --- !u!1 &72698705
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,20 +535,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
   m_PrefabInstance: {fileID: 1005144339}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &181511872
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181511869}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.1835995
-  m_Height: 2.4290657
-  m_Direction: 1
-  m_Center: {x: -0.06828117, y: 0.71453285, z: -0.0036849976}
 --- !u!114 &181511873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,6 +553,19 @@ MonoBehaviour:
   sentences:
   - selam ben togg ceo
   - naber
+--- !u!65 &181511874
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181511869}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.2554677, z: 1}
+  m_Center: {x: -0, y: 0.62773263, z: -0}
 --- !u!1 &361908044
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,6 +759,10 @@ PrefabInstance:
     - target: {fileID: 8299731911600095054, guid: a7555bfce2550364c87bf03b7877ab52, type: 3}
       propertyPath: m_Name
       value: DialogueSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 8299731911600095054, guid: a7555bfce2550364c87bf03b7877ab52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8299731912072442563, guid: a7555bfce2550364c87bf03b7877ab52, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1048,7 +1050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6187067436480850121, guid: 41835c9268093a9418ed4c732a5c2b5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.24
+      value: 20.523
       objectReference: {fileID: 0}
     - target: {fileID: 6187067436480850121, guid: 41835c9268093a9418ed4c732a5c2b5f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1082,6 +1084,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6187067436480850125, guid: 41835c9268093a9418ed4c732a5c2b5f, type: 3}
+      propertyPath: m_Mass
+      value: 100000000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41835c9268093a9418ed4c732a5c2b5f, type: 3}
 --- !u!1 &673187443 stripped
@@ -1094,20 +1100,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
   m_PrefabInstance: {fileID: 1835172450}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &673187446
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673187443}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.1835995
-  m_Height: 2.4290657
-  m_Direction: 1
-  m_Center: {x: -0.06828117, y: 0.71453285, z: -0.0036849976}
 --- !u!114 &673187447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1126,6 +1118,19 @@ MonoBehaviour:
   sentences:
   - selam ben aircar ceo
   - naberr
+--- !u!65 &673187448
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673187443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.2554677, z: 1}
+  m_Center: {x: -0, y: 0.62773263, z: -0}
 --- !u!1001 &709890968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1334,6 +1339,18 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
       propertyPath: m_LocalPosition.x
       value: -33.83
       objectReference: {fileID: 0}
@@ -1377,6 +1394,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DigiageCeo
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 14176eee624bf8349a1d924843989db9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
 --- !u!1 &846184516
@@ -1666,6 +1687,18 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
       propertyPath: m_LocalPosition.x
       value: -116.050026
       objectReference: {fileID: 0}
@@ -1709,6 +1742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToggCeo
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 14176eee624bf8349a1d924843989db9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
 --- !u!1001 &1105870753
@@ -3299,6 +3336,18 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
       propertyPath: m_LocalPosition.x
       value: -87.50226
       objectReference: {fileID: 0}
@@ -3342,6 +3391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AircarCeo
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 14176eee624bf8349a1d924843989db9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
 --- !u!1 &1933207941 stripped

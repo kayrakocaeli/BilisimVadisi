@@ -133,20 +133,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
   m_PrefabInstance: {fileID: 828053537}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &57123957
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57123954}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.1835995
-  m_Height: 2.4290657
-  m_Direction: 1
-  m_Center: {x: -0.06828117, y: 0.71453285, z: -0.0036849976}
 --- !u!114 &57123958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +151,19 @@ MonoBehaviour:
   sentences:
   - selam ben digiage ceo
   - naber
+--- !u!65 &57123959
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57123954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.1635978, z: 1}
+  m_Center: {x: -0, y: 0.58179873, z: -0}
 --- !u!1 &72698705
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,20 +535,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
   m_PrefabInstance: {fileID: 1005144339}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &181511872
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181511869}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.1835995
-  m_Height: 2.4290657
-  m_Direction: 1
-  m_Center: {x: -0.06828117, y: 0.71453285, z: -0.0036849976}
 --- !u!114 &181511873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,6 +553,19 @@ MonoBehaviour:
   sentences:
   - selam ben togg ceo
   - naber
+--- !u!65 &181511874
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181511869}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.2481983, z: 1}
+  m_Center: {x: -0, y: 0.62409765, z: -0}
 --- !u!1 &278401784
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,7 +722,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148456981}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &331071008
 MonoBehaviour:
@@ -932,6 +930,10 @@ PrefabInstance:
     - target: {fileID: 8299731911600095054, guid: a7555bfce2550364c87bf03b7877ab52, type: 3}
       propertyPath: m_Name
       value: DialogueSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 8299731911600095054, guid: a7555bfce2550364c87bf03b7877ab52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8299731912072442563, guid: a7555bfce2550364c87bf03b7877ab52, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1238,20 +1240,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
   m_PrefabInstance: {fileID: 1835172450}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &673187446
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673187443}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.1835995
-  m_Height: 2.4290657
-  m_Direction: 1
-  m_Center: {x: -0.06828117, y: 0.71453285, z: -0.0036849976}
 --- !u!114 &673187447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1270,6 +1258,19 @@ MonoBehaviour:
   sentences:
   - selam ben aircar ceo
   - naberr
+--- !u!65 &673187448
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673187443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.1091347, z: 1}
+  m_Center: {x: 0, y: 0.5545674, z: 0}
 --- !u!1001 &709890968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1417,12 +1418,24 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
       propertyPath: m_LocalPosition.x
       value: -33.83
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.34
+      value: 17.26272
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1460,6 +1473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DigiageCeo
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 14176eee624bf8349a1d924843989db9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3716b4ea31871a148bf660af4f6b4751, type: 3}
 --- !u!1 &846184516
@@ -1749,12 +1766,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
       propertyPath: m_LocalPosition.x
       value: -116.050026
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.29728
+      value: 17.295
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1792,6 +1821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToggCeo
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 14176eee624bf8349a1d924843989db9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50b96fbbcac49cb4794d0f3d5fa42998, type: 3}
 --- !u!1001 &1105870753
@@ -1884,7 +1917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1417274621101168, guid: b6883ab16065ce74589a2e2f0874e149, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4984894345746452, guid: b6883ab16065ce74589a2e2f0874e149, type: 3}
       propertyPath: m_RootOrder
@@ -2059,7 +2092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1258865852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2505,7 +2538,7 @@ MonoBehaviour:
     maxVelocityGears: 1e0000002d0000003c0000004b0000005a00000069000000780000008700000096000000a5000000b4000000c3000000
   _vehicleSettings:
     startOn: 1
-    vehicleMass: 2000
+    vehicleMass: 2000000
     improveControl:
       tireSlipsFactor: 0.795
       helpToTurn: 0.355
@@ -2548,10 +2581,10 @@ MonoBehaviour:
     rightFrontWheel:
       wheelMesh: {fileID: 7846009876664074355}
       wheelCollider: {fileID: 809463095}
-      wheelDrive: 1
+      wheelDrive: 0
       wheelHandBrake: 1
       skidMarkShift: 0.04
-      wheelTurn: 1
+      wheelTurn: 0
       wheelWorldPosition: {x: 0, y: 0, z: 0}
       rendSKDmarks: {fileID: 0}
       generateSkidBool: 0
@@ -2561,10 +2594,10 @@ MonoBehaviour:
     leftFrontWheel:
       wheelMesh: {fileID: 3248940044085115092}
       wheelCollider: {fileID: 846184518}
-      wheelDrive: 1
+      wheelDrive: 0
       wheelHandBrake: 1
       skidMarkShift: 0.04
-      wheelTurn: 1
+      wheelTurn: 0
       wheelWorldPosition: {x: 0, y: 0, z: 0}
       rendSKDmarks: {fileID: 0}
       generateSkidBool: 0
@@ -2574,7 +2607,7 @@ MonoBehaviour:
     rightRearWheel:
       wheelMesh: {fileID: 8339314206769931757}
       wheelCollider: {fileID: 1984223304}
-      wheelDrive: 1
+      wheelDrive: 0
       wheelHandBrake: 1
       skidMarkShift: 0.04
       wheelTurn: 0
@@ -2587,7 +2620,7 @@ MonoBehaviour:
     leftRearWheel:
       wheelMesh: {fileID: 1676884957324975987}
       wheelCollider: {fileID: 900614740}
-      wheelDrive: 1
+      wheelDrive: 0
       wheelHandBrake: 1
       skidMarkShift: 0.04
       wheelTurn: 0
@@ -2624,13 +2657,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258865851}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 100000000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!4 &1258865854
 Transform:
@@ -2639,8 +2672,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258865851}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -143.6, y: 16.19, z: -20.896141}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -125.23, y: 19.8, z: -153.56}
   m_LocalScale: {x: 2.6411414, y: 2.641141, z: 2.6411414}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2650,7 +2683,7 @@ Transform:
   - {fileID: 1811135652}
   m_Father: {fileID: 0}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!1 &1337596692
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,12 +3286,24 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
       propertyPath: m_LocalPosition.x
       value: -87.50226
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.46
+      value: 21.386
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3296,6 +3341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AircarCeo
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 14176eee624bf8349a1d924843989db9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eba31e9a0282eb42a1b6586e2ed1700, type: 3}
 --- !u!1 &1933207941 stripped
