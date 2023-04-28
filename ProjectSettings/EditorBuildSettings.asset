@@ -20,7 +20,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Main_Scene_Togg_Exit.unity
     guid: eb9d6a0b8a6c4e3439035bff3b34aa66
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Togg_Dome.unity
     guid: 108625267b0607c409b3e21f87ad6524
+  - enabled: 1
+    path: Assets/Scenes/Togg_Dome 1.unity
+    guid: ede0fbea26299b249885fb2ff450a7f3
   m_configObjects: {}
